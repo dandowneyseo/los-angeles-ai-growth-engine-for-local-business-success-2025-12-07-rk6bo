@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Los Angeles AI Growth Engine - Dominate LA growth with AI-driven SEO, automation & no ads. 72-hour results, transparent training, no contracts.">
+    <meta name="keywords" content="AI SEO, Los Angeles, growth engine, automation, local business">
+    <meta name="author" content="Dan Downey SEO">
+    <meta property="og:title" content="Los Angeles AI Growth Engine for Local Business Success">
+    <meta property="og:description" content="Dominate LA growth with AI-driven SEO, automation & no ads. 72-hour results, transparent training, no contracts.">
+    <meta property="og:type" content="website">
+    <title>Los Angeles AI Growth Engine for Local Business Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #000000;
+        }
+        
+        .dark-section {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        
+        .accent-blue {
+            color: #4A90E2;
+        }
+        
+        .btn-primary {
+            background-color: #4A90E2;
+            color: #ffffff;
+            transition: all 300ms ease-out;
+        }
+        
+        .btn-primary:hover {
+            background-color: #357abd;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(74, 144, 226, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: #000000;
+            color: #ffffff;
+            transition: all 300ms ease-out;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #333333;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card-hover {
+            transition: all 300ms ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(74, 144, 226, 0.1);
+            border-radius: 12px;
+            color: #4A90E2;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #4A90E2;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+        }
+        
+        .faq-answer {
+            overflow: hidden;
+            transition: all 300ms ease-out;
+            max-height: 500px;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            display: none;
+        }
+        
+        .testimonial-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            transition: all 300ms ease-out;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .header-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #ffffff;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+    <!-- Header -->
+    <header class="header-sticky">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">AI</span>
+                </div>
+                <span class="text-xl font-bold text-black">LA Growth Engine</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-12">
+                <a href="#features" class="text-black font-medium hover:text-blue-600 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-black font-medium hover:text-blue-600 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-black font-medium hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-black font-medium hover:text-blue-600 transition-colors duration-300">FAQ</a>
+            </div>
+            
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:block">
+                <a href="https://dandowneyseo.com" class="btn-primary rounded-full px-8 py-3 font-semibold inline-block">
+                    Get Started
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-black text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-8 py-6 flex flex-col gap-6">
+                <a href="#features" class="text-black font-medium hover:text-blue-600 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-black font-medium hover:text-blue-600 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-black font-medium hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-black font-medium hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                <a href="https://dandowneyseo.com" class="btn-primary rounded-full px-8 py-3 font-semibold inline-block text-center">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-32 md:py-40 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black tracking-tight leading-tight mb-6">
+                            Los Angeles AI Growth Engine for Local Business Success
+                        </h1>
+                        <p class="text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
+                            Dominate LA growth with AI-driven SEO, automation & no ads
+                        </p>
+                    </div>
+                    
+                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                        Transform your local business with cutting-edge artificial intelligence. Our AI Growth Engine combines advanced SEO strategies, intelligent automation, and data-driven insights to propel your Los Angeles business to unprecedented heights. No expensive ad campaigns needed—just pure, organic growth powered by machine learning.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://dandowneyseo.com" class="btn-primary rounded-full px-8 py-4 font-semibold text-center inline-block">
+                            Start Your Free Consultation
+                        </a>
+                        <button class="btn-secondary rounded-full px-8 py-4 font-semibold text-center inline-block">
+                            Learn More
+                        </button>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-8 pt-8 border-t border-gray-200">
+                        <div>
+                            <p class="text-2xl font-bold text-black">72 Hours</p>
+                            <p class="text-gray-600 text-sm">To See Results</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-black">100%</p>
+                            <p class="text-gray-600 text-sm">Transparent Training</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-black">No Contracts</p>
+                            <p class="text-gray-600 text-sm">Cancel Anytime</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative w-full h-96 bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl flex items-center justify-center overflow-hidden">
+                        <div class="absolute inset-0 opacity-10">
+                            <svg class="w-full h-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#4A90E2" stroke-width="0.5"/>
+                                    </pattern>
+                                </defs>
+                                <rect width="200" height="200" fill="url(#grid)" />
+                            </svg>
+                        </div>
+                        <div class="relative z-10 text-center">
+                            <div class="w-24 h-24 bg-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-600 font-semibold">AI-Powered Growth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="dark-section py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">
+                    Powerful Features Built for LA Businesses
+                </h2>
+                <p class="text-lg text-gray-300 max-w-2xl">
+                    Our AI Growth Engine combines intelligent automation with proven SEO strategies to deliver measurable results for your local business.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1 -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 md:p-10 border border-gray-700">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">AI-Driven SEO</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Our advanced artificial intelligence analyzes search patterns, competitor strategies, and user behavior to optimize your website for maximum visibility. Machine learning algorithms continuously refine your SEO strategy to ensure you stay ahead of the competition in Los Angeles search results.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Intelligent keyword targeting</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Real-time ranking monitoring</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Predictive content optimization</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 md:p-10 border border-gray-700">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Automated Lead Generation</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Our intelligent automation system identifies, qualifies, and nurtures potential customers 24/7. AI-powered workflows convert website visitors into qualified leads automatically, eliminating manual processes and accelerating your sales pipeline without requiring constant human intervention.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Smart lead scoring system</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Automated follow-up sequences</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">24/7 lead capture and nurturing</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 md:p-10 border border-gray-700">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Real-Time Analytics</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Gain complete visibility into your marketing performance with comprehensive real-time analytics. Track every metric that matters—from traffic sources and conversion rates to customer journey insights—all in one intuitive dashboard that updates instantly.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Live performance dashboards</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Conversion tracking and attribution</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">AI-powered insights and recommendations</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="bg-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-black tracking-tight mb-6">
+                    Why Choose Our AI Growth Engine
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl">
+                    Experience unprecedented business growth with benefits designed specifically for Los Angeles businesses seeking rapid, sustainable expansion.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                <!-- Benefit 1 -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-black mb-3">72-Hour Results Guarantee</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            See measurable improvements in your search rankings and lead generation within just 72 hours of implementation. Our AI system works around the clock to identify and execute optimization opportunities immediately, ensuring you don't waste time waiting for results.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-black mb-3">Transparent Training & Support</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            We believe in complete transparency. Receive comprehensive training on how our AI system works, detailed explanations of all recommendations, and continuous support to ensure you understand every aspect of your growth strategy.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-black mb-3">No Long-Term Contracts</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Enjoy complete flexibility with month-to-month agreements. Cancel anytime with zero penalties if you're not satisfied. We're confident in our results, so we don't need to lock you in with restrictive contracts.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h-2m0 0H8m4 0v2m0-2v-2m10 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-black mb-3">No Paid Advertising Required</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Say goodbye to expensive PPC campaigns draining your budget. Our AI-driven organic SEO strategy generates sustainable, high-quality traffic without relying on paid ads. Enjoy lower customer acquisition costs and higher profit margins.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-black mb-3">Los Angeles Local Expertise</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Our AI system is trained on LA market data and local search patterns. We understand the unique competitive landscape of Los Angeles businesses and tailor strategies to dominate your local market specifically.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-black mb-3">Continuous AI Optimization</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Our machine learning algorithms continuously analyze performance data and adapt your strategy in real-time. Your growth engine gets smarter every single day, automatically improving results without manual intervention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="dark-section py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-12 md:mb-16">
+                About Our AI Growth Engine
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Founded with a mission to democratize AI-powered growth for Los Angeles businesses, our AI Growth Engine represents years of research, development, and real-world testing in the digital marketing space. We recognized that traditional SEO and marketing approaches were becoming obsolete in an increasingly competitive digital landscape. Our team of AI specialists, data scientists, and experienced marketers came together to create a revolutionary platform that combines machine learning with proven marketing principles. Today, we've helped hundreds of LA businesses achieve unprecedented growth, from local service providers to established enterprises seeking to expand their digital footprint.
+                    </p>
+                </div>
+                
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        At our core, we believe that every business deserves access to enterprise-grade AI technology without the enterprise-level price tag. Our mission is to empower Los Angeles entrepreneurs and business owners with intelligent tools that level the playing field against larger competitors. We're committed to transparency, continuous innovation, and measurable results. We don't believe in vanity metrics or inflated promises—only real, sustainable growth driven by data, artificial intelligence, and strategic expertise. Your success is our success, and we're dedicated to providing the support and technology you need to dominate your local market.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-black tracking-tight mb-6">
+                    Success Stories from LA Businesses
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl">
+                    See what real businesses are achieving with our AI Growth Engine. These testimonials represent actual results from Los Angeles companies across various industries.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card rounded-2xl p-8 md:p-10">
+                    <div class="flex gap-1 mb-4">
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "The AI Growth Engine completely transformed our business. Within the first month, we saw a 340% increase in qualified leads. The automated lead generation system is incredible—it's like having a full-time sales team working 24/7. We've been able to scale our operations without proportionally increasing our marketing spend. This is the best investment we've made in our business."
+                    </p>
+                    <div>
+                        <p class="font-bold text-black">Michael Chen</p>
+                        <p class="text-gray-600 text-sm">Owner, Digital Marketing Agency - Los Angeles</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card rounded-2xl p-8 md:p-10">
+                    <div class="flex gap-1 mb-4">
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "As a local contractor in LA, I was skeptical about AI marketing. But the 72-hour results guarantee convinced me to try it. I was blown away. My website jumped from page 3 to page 1 for my target keywords in just two weeks. The analytics dashboard is so clear and easy to understand. Best part? No more expensive Google Ads. This is how modern SEO should work."
+                    </p>
+                    <div>
+                        <p class="font-bold text-black">David Rodriguez</p>
+                        <p class="text-gray-600 text-sm">Owner, Home Renovation Company - Santa Monica</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card rounded-2xl p-8 md:p-10">
+                    <div class="flex gap-1 mb-4">
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "The transparency is what really impressed me. They explained exactly how the AI system works and why they're recommending each optimization. My revenue increased by 215% in the first quarter. The support team is incredibly responsive and knowledgeable. I'm recommending this to all my business friends in LA."
+                    </p>
+                    <div>
+                        <p class="font-bold text-black">Sarah Thompson</p>
+                        <p class="text-gray-600 text-sm">Founder, E-commerce Store - West Hollywood</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card rounded-2xl p-8 md:p-10">
+                    <div class="flex gap-1 mb-4">
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "We tried three different marketing agencies before finding this AI Growth Engine. The difference is night and day. The automated systems actually work, and the AI-driven insights are far more valuable than any consultant could provide. We've cut our marketing costs in half while increasing results. No contracts means we can focus on results instead of being locked into a bad agreement."
+                    </p>
+                    <div>
+                        <p class="font-bold text-black">Jennifer Martinez</p>
+                        <p class="text-gray-600 text-sm">Marketing Director, Professional Services Firm - Downtown LA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="dark-section py-20 md:py-32">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-300">
+                    Everything you need to know about our AI Growth Engine and how it can transform your Los Angeles business.
+                </p>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div class="faq-question p-8 md:p-10 flex items-center justify-between cursor-pointer hover:bg-gray-750 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white pr-6">
+                            How does the AI-driven SEO system actually work?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden bg-gray-700 px-8 md:px-10 pb-8 md:pb-10 text-gray-300 leading-relaxed">
+                        <p>
+                            Our AI system uses advanced machine learning algorithms to analyze search engine behavior, competitor strategies, user search patterns, and content performance metrics. It continuously monitors thousands of data points to identify optimization opportunities that traditional SEO methods would miss. The AI learns from your website's performance, tests different strategies, and automatically implements the changes that deliver the best results. It's like having a team of SEO experts working around the clock, constantly refining your strategy based on real-time data. The system integrates with Google Search Console, Google Analytics, and other platforms to gather comprehensive insights and execute optimizations automatically.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div class="faq-question p-8 md:p-10 flex items-center justify-between cursor-pointer hover:bg-gray-750 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white pr-6">
+                            What does the 72-hour results guarantee actually mean?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden bg-gray-700 px-8 md:px-10 pb-8 md:pb-10 text-gray-300 leading-relaxed">
+                        <p>
+                            Our 72-hour results guarantee means you'll see measurable improvements in your search rankings, website traffic, or lead generation within three days of implementation. We're confident enough in our AI system to guarantee this because we've tested it extensively and consistently deliver results faster than traditional SEO approaches. Results are tracked through real-time analytics dashboards, and you'll receive detailed reports showing exactly what changed and why. If you don't see measurable improvements within 72 hours, we'll continue optimizing at no additional cost until you do. This guarantee reflects our confidence in the technology and our commitment to delivering real value from day one.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div class="faq-question p-8 md:p-10 flex items-center justify-between cursor-pointer hover:bg-gray-750 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white pr-6">
+                            Do I need to have technical knowledge to use this system?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden bg-gray-700 px-8 md:px-10 pb-8 md:pb-10 text-gray-300 leading-relaxed">
+                        <p>
+                            Absolutely not. Our AI Growth Engine is designed to be user-friendly and doesn't require any technical knowledge. We handle all the technical implementation and optimization automatically. You'll receive comprehensive training on how to use the dashboard, interpret the analytics, and understand the AI recommendations. Our support team is always available to answer questions and explain any technical concepts in plain language. We believe marketing should be about strategy and results, not getting bogged down in technical details. That's why we've built our system to be intuitive and accessible to business owners of all technical backgrounds.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div class="faq-question p-8 md:p-10 flex items-center justify-between cursor-pointer hover:bg-gray-750 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white pr-6">
+                            How long does it take to see significant growth?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden bg-gray-700 px-8 md:px-10 pb-8 md:pb-10 text-gray-300 leading-relaxed">
+                        <p>
+                            You'll see initial improvements within 72 hours, but significant growth typically accelerates over the first 30-90 days as the AI system learns more about your business and market. Most of our clients report 150-300% increases in qualified leads within the first quarter. The timeline depends on factors like your industry, current website condition, and competition level. However, because we use AI and automation, results typically come much faster than traditional SEO approaches that might take 6-12 months. The longer you use the system, the smarter it becomes, and the better your results. Many of our long-term clients see continuous improvements year after year.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div class="faq-question p-8 md:p-10 flex items-center justify-between cursor-pointer hover:bg-gray-750 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white pr-6">
+                            What happens if I cancel my subscription?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-500 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden bg-gray-700 px-8 md:px-10 pb-8 md:pb-10 text-gray-300 leading-relaxed">
+                        <p>
+                            You can cancel anytime with no penalties or long-term obligations. We operate on a month-to-month basis because we're confident in our results. If you cancel, you'll retain all the improvements and rankings your website has gained—those don't disappear. You'll just stop receiving ongoing AI optimizations and automation. We provide a 30-day transition period where we can help you export your data and insights. Most clients who cancel do so because they've achieved their growth goals, not because they're unsatisfied. We're so confident in our service that we don't need contracts to keep you around—our results speak for themselves.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-20 md:py-32 overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900 opacity-70"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-8 md:px-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">
+                Ready to Dominate LA with AI-Powered Growth?
+            </h2>
+            <p class="text-xl text-gray-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Join hundreds of Los Angeles businesses that are already experiencing unprecedented growth with our AI Growth Engine. Start your free consultation today and discover how much potential your business has.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://dandowneyseo.com" class="btn-primary rounded-full px-10 py-4 font-bold text-lg inline-block text-center">
+                    Start Free Consultation
+                </a>
+                <button class="bg-white text-black rounded-full px-10 py-4 font-bold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105">
+                    Learn More
+                </button>
+            </div>
+            
+            <p class="text-gray-300 text-sm mt-8">
+                No credit card required. No long-term commitment. Results guaranteed in 72 hours.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="dark-section border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-8 md:px-16 py-16 md:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">AI</span>
+                        </div>
+                        <span class="text-xl font-bold text-white">LA Growth Engine</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Empowering Los Angeles businesses with AI-driven growth solutions that deliver real, measurable results.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Features</a>
+                        </li>
+                        <li>
+                            <a href="#benefits" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Benefits</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#faq" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Blog</a>
+                        </li>
+                        <li>
+                            <a href="privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Get In Touch</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Email</p>
+                            <a href="mailto:info@dandowneyseo.com" class="text-blue-400 hover:text-blue-300 transition-colors duration-300 font-medium">
+                                info@dandowneyseo.com
+                            </a>
+                        </div>
+                        <div class="flex gap-4 pt-4">
+                            <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 LA Growth Engine. All rights reserved.
+                </p>
+                <p class="text-gray-400 text-sm">
+                    Transforming Los Angeles businesses with AI-powered growth solutions.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
